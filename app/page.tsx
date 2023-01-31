@@ -1,13 +1,12 @@
 // import Image from 'next/image'
 import { Inter } from '@next/font/google'
 // import styles from './page.module.css'
+import Pricing from "./pricingUi/page";
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div>
-      Hello World from Ameer Hamza Khetran
-    </div>
+    <Pricing/>
   )
 }
