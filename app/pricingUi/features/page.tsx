@@ -1,6 +1,17 @@
 'use client'
 
-import { Box, Text, Button, Flex } from "@chakra-ui/react";
+import { Box, Text, Button, Flex, HStack, StackProps, Icon, Stack } from "@chakra-ui/react";
+import CheckIcon from "./icons/icon";
+
+const ListItem = (props: StackProps) => {
+    const {children, ...rest} = props;
+    return (
+        <HStack as='li' spacing='25px' {...rest}>
+            <Icon as={CheckIcon} w='22px' h='22px'></Icon>
+            <Text>{children}</Text>
+        </HStack>
+    );
+}
 
 export default function Features() {
     return (
@@ -8,7 +19,9 @@ export default function Features() {
         maxW='994px'
         h='280px'
         boxShadow='0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);'
-        m='auto'
+        ml='auto'
+        mr='auto'
+        mt='-130px'        
         >
             <Flex>
                 <Box as='section' 
@@ -55,13 +68,24 @@ export default function Features() {
                     </Button>
                 </Box>
                 <Box 
-                bg='gray'
+                bg='white'
                 w='644px'
                 h='280px'
+                fontSize='18px'
+                fontWeight='400'
+                lineHeight='28px'
+                pl='50px'
+                pt='25px'
                 >
                     <Text>
-                        Access these features when you get this pricing
+                        Access these features when you get this pricing package for<br/> your business.
                     </Text>
+                    <Stack as='ul' spacing='16px' pt='15px'>
+                        <ListItem>International calling and messaging API</ListItem>
+                        <ListItem>Additional phone numbers</ListItem>
+                        <ListItem>Automated messages via Zapier</ListItem>
+                        <ListItem>24/7 support and consulting</ListItem>
+                    </Stack>
                 </Box>
             </Flex>
         </Box>
