@@ -33,35 +33,35 @@ export default function Features() {
                     <Text as='h2'
                     fontSize='24px'
                     fontWeight='extrabold'
-                    color='#171923'
-                    pt='25px'
+                    color='gray.900'
+                    pt='6'
                     >
                         Premium Pro
                     </Text>
                     <Text as='h3'
-                    fontSize='60px'
+                    fontSize='6xl'
                     fontWeight='extrabold'
-                    color='#171923'
+                    color='gray.900'
                     letterSpacing='tight'
                     mt='-1'
                     >
                         $329
                     </Text>
                     <Text
-                    fontSize='18px'
+                    fontSize='1g'
                     fontWeight='500'
-                    color='#171923'
+                    color='gray.900'
                     >
                         billed just once
                     </Text>
                     <Button
-                    mt='20px'
+                    mt='5'
                     w='280px' 
-                    borderRadius='8px'
+                    borderRadius='lg'
                     colorScheme='purple'
                     size='lg'
-                    fontSize='16px'
-                    fontWeight='700'
+                    fontSize='md'
+                    fontWeight='bold'
                     fontStyle='normal'
                     >
                         Get Started
@@ -71,16 +71,16 @@ export default function Features() {
                 bg='white'
                 w='644px'
                 h='280px'
-                fontSize='18px'
-                fontWeight='400'
-                lineHeight='28px'
+                fontSize='lg'
+                fontWeight='normal'
+                lineHeight='7'
                 pl='50px'
-                pt='25px'
+                pt='6'
                 >
                     <Text>
                         Access these features when you get this pricing package for<br/> your business.
                     </Text>
-                    <Stack as='ul' spacing='16px' pt='15px'>
+                    <Stack as='ul' spacing='4' pt='3.5'>
                         <ListItem>International calling and messaging API</ListItem>
                         <ListItem>Additional phone numbers</ListItem>
                         <ListItem>Automated messages via Zapier</ListItem>
