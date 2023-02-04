@@ -34,7 +34,7 @@ export default function Features() {
                     fontSize='24px'
                     fontWeight='extrabold'
                     color='#171923'
-                    pt='30px'
+                    pt='25px'
                     >
                         Premium Pro
                     </Text>
