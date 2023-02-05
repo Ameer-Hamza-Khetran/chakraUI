@@ -7,10 +7,10 @@ export default function Header() {
         <Box w='full' h='sm' bg='purple.600' color='gray.50' as='section'>
             <Text as='h1' 
             fontWeight="extrabold" 
-            fontSize='5xl' 
+            fontSize={["3xl","3xl","5xl"]} 
             fontFamily='sans-serif' 
             fontStyle='normal' 
-            align='center'
+            align={["left","center"]}
             letterSpacing='tight'
             pt='20'
             > 
@@ -18,10 +18,10 @@ export default function Header() {
             </Text>
             <Text 
             fontWeight='medium' 
-            fontSize='2xl' 
+            fontSize={["lg","lg","2xl"]} 
             fontFamily='sans-serif' 
             fontStyle='normal' 
-            align='center'
+            align={["left","center"]}
             pt='5'
             opacity='0.84'
             >

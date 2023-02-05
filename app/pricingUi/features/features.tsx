@@ -23,7 +23,7 @@ export default function Features() {
         mr='auto'
         mt='-130px'        
         >
-            <Flex>
+            <Flex direction={["column","column","row"]} alignItems={["center"]} pt={["20px", "0px"]}>
                 <Box as='section' 
                 w='350px'
                 h='280px'
@@ -69,12 +69,13 @@ export default function Features() {
                 </Box>
                 <Box 
                 bg='white'
-                w='644px'
-                h='280px'
+                w={["350px","350px","644px"]}
+                h={["auto","280px"]}
+                textAlign={["center","initial"]}
                 fontSize='lg'
                 fontWeight='normal'
                 lineHeight='7'
-                pl='50px'
+                pl={["auto","50px"]}
                 pt='6'
                 >
                     <Text>

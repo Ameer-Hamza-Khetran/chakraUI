@@ -20,7 +20,7 @@ export function Features(props: FeatureProps) {
 
 export default function Bottom() {
     return (
-        <HStack maxWidth='994px' ml='auto' mr='auto' pt='16' spacing='5'>
+        <HStack maxWidth={["350px","994px"]} ml='auto' mr='auto' pt='16' spacing='5' flexDirection={["column","column","row"]}>
             <Features icon={MoneyBackIcon}>30 days money back Guarantee</Features>
             <Features icon={HassleFreeIcon}>No setup fees 100% hassle-free</Features>
             <Features icon={PayOnceIcon}>No monthly subscription Pay once and for all</Features>
